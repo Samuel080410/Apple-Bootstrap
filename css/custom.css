@@ -1,0 +1,108 @@
+:root {
+    --text-green: #1aff00;
+    --text-pink: #aaaaaa;
+}
+
+
+
+.welcome-info {
+    background: url("../images/apple-logo1.png");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-green {
+    color: var(--text-green);
+}
+
+.text-pink {
+    color: var(--text-pink);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-body {
+    flex-grow: 1;
+}
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.mt-3{
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.contact-box {
+    background-color: #cfd6df;
+    color: #1c3661;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+
+}
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+}
+.contact-form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #1c3661;
+}
+footer .social-icons i {
+    color: white;
+}
+
+.test{
+    background-color: rgba(13, 109, 251, 0.18);
+}

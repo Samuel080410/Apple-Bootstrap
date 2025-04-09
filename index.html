@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple Products</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg  navbar-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/apple_logo-black.png" alt="Apple Logo" width="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminModal">Admin</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Admin section</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <a class="nav-link text-white" href="admin.html">Login</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<main>
+    <section class="welcome-info text-center text-light p-5 bg-primary">
+        <div class="container">
+            <h1>Discover the World of Apple</h1>
+            <p>Experience innovation, design, and power with Apple products.</p>
+        </div>
+    </section>
+
+    <section id="products" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Products</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/iphone02.jpg"  class="card-img-top my-5" alt="iPhone">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 16</h5>
+                            <p class="card-text">The ultimate iPhone experience with A18 Bionic chip and Super Retina XDR display.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iphoneModal">Detail</button>
+                        </div>
+                    </div>
+                    <!-- iPhone Modal -->
+                    <div class="modal fade" id="iphoneModal" tabindex="-1" aria-labelledby="iphoneModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="iphoneModalLabel">iPhone 16 – Detail</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/iphone02.jpg" class="img-fluid mb-3" alt="iPhone">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Display:</strong> 6.1" Super Retina XDR</li>
+                                        <li><strong>Chip:</strong> A18 Bionic</li>
+                                        <li><strong>Camera:</strong> 48MP main camera</li>
+                                        <li><strong>Capacity:</strong> 128 GB / 256 GB / 512 GB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/ipad.png" class="card-img-top" alt="iPad">
+                        <div class="card-body">
+                            <h5 class="card-title">iPad Pro</h5>
+                            <p class="card-text">Power meets portability with the M2 chip and stunning Liquid Retina display.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ipadModal">Detail</button>
+                        </div>
+                    </div>
+                    <!--iPad Modal-->
+                    <div class="modal fade" id="ipadModal" tabindex="-1" aria-labelledby="ipadModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ipadModalLabel">iPad Pro – Detail</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/ipad.png" class="img-fluid mb-3" alt="iPad">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Display:</strong> 11" Liquid Retina</li>
+                                        <li><strong>Chip:</strong> M2</li>
+                                        <li><strong>Support:</strong> Apple Pencil (2. generation)</li>
+                                        <li><strong>Storage:</strong> Up to 2 TB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/macbook.jpg" class="card-img-top my-5" alt="MacBook">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Pro</h5>
+                            <p class="card-text">Incredible performance with M3 chip and up to 20 hours of battery life.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#macbookModal">Detail</button>
+                        </div>
+                    </div>
+                    <!-- MacBook Modal -->
+                    <div class="modal fade" id="macbookModal" tabindex="-1" aria-labelledby="macbookModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="macbookModalLabel">MacBook Pro – Detail</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/macbook.jpg" class="img-fluid mb-3" alt="MacBook">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Display:</strong> 14" Liquid Retina XDR</li>
+                                        <li><strong>Chip:</strong> M3 Pro</li>
+                                        <li><strong>Storage:</strong> 16 GB – 64 GB</li>
+                                        <li><strong>Battery:</strong> up to 18 hours</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Customer Reviews</h2>
+            <p>See what our customers are saying about Apple products.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Absolutely love my new iPhone! The camera is incredible."</p>
+                        <footer class="blockquote-footer bg-light">Emily R.</footer>
+                    </blockquote>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"MacBook Pro is a beast! Perfect for my design work."</p>
+                        <footer class="blockquote-footer bg-light">James T.</footer>
+                    </blockquote>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"iPad Pro replaced my laptop. It’s that powerful!"</p>
+                        <footer class="blockquote-footer bg-light">Sarah M.</footer>
+                    </blockquote>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid py-0">
+        <div class="row">
+            <!-- Levý sloupec -->
+            <div class="col-md-6 contact-box">
+                <h5 class="fw-bold text-uppercase mb-4">Location</h5>
+                <p>350 5th Ave<br>New York, NY 10118</p>
+
+                <h6 class="fw-bold text-uppercase mt-5 mb-3">Follow Us</h6>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+
+                <p class="mt-5 mb-0">&copy;2025 Privacy policy</p>
+            </div>
+
+            <!-- Pravý sloupec -->
+            <div class="col-md-6 px-5 test " id="contact">
+                <h2 class="text-black mb-4 mt-3 mt-md-0 contact-form-title">Contact Form</h2>
+                <form class="contact-form">
+                    <input type="text" class="form-control" placeholder="Enter your Name" required>
+                    <input type="email" class="form-control" placeholder="Enter a valid email address" required>
+                    <textarea class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                        <button class="btn btn-primary" type="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+</main>
+</body>
+</html>
