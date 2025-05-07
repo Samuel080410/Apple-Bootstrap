@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+      <!-- sidebar -->
+      <div class="col-sm-4 col-md-3 col-lg-2 d-flex flex-column bg-dark p-4 vh-100">
+        <h1 class="text-white">Admin Panel</h1>
+
+        <nav class="nav d-flex flex-column">
+          <a class="nav-link text-white py-2 px-0" href="dashboard.html">
+            <i class="fa fa-dashboard"></i> Dashboard
+          </a>
+          <a class="nav-link text-white py-2 px-0" href="products.html">
+            <i class="fa fa-list"></i> Products</a>
+          <a class="nav-link text-white py-2 px-0" href="orders.html">
+            <i class="fa fa-credit-card"></i> Orders
+          </a>
+          <a class="nav-link text-white py-2 px-0" href="users.html">
+            <i class="fa fa-user"></i> Users
+          </a>
+        </nav>
+
+        <div class="mt-auto text-white">
+          <hr class="text-white">
+          <a class="nav-link" href="user-profile.html">
+            <h5 class="mb-0">Samuel Šticha</h5>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- content -->
+      <div class="col-sm-8 col-md-9 col-lg-10 bg-light vh-100 p-4 overflow-auto">
+        <!-- Products Section -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2>Products</h2>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">
+            Add Product
+          </button>
+        </div>
+
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
+          <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>#1001</td>
+            <td>iPhone 15</td>
+            <td>Electronics</td>
+            <td>$900.00</td>
+            <td>34</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Actions
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Detail</a></li>
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+</div>
+
+
+<script src="../js/bootstrap.bundle.js"></script>
+<!-- Modal for Add Product -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" required>
+          </div>
+          <div class="mb-3">
+            <label for="productCategory" class="form-label">Category</label>
+            <input type="text" class="form-control" id="productCategory" required>
+          </div>
+          <div class="mb-3">
+            <label for="productPrice" class="form-label">Price</label>
+            <input type="number" class="form-control" id="productPrice" step="0.01" required>
+          </div>
+          <div class="mb-3">
+            <label for="productStock" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="productStock" required>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-end">
+          <button type="submit" class="btn btn-success">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
